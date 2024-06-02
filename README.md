@@ -16,29 +16,38 @@
     ```
 
 3. 创建数据库：
+    ```bash
     conn = sqlite3.connect('weddings.db')
     cursor = conn.cursor()
+    ```
 
-
-4. 将csv文件导入数据库并创建表：
-   cursor.execute('''CREATE TABLE''')
+5. 将csv文件导入数据库并创建表：
+    ```bash
+    cursor.execute('''CREATE TABLE''')
+    ```
    
-
+   
 ## 使用
 1. 定义查询函数：
-def get_function():
-    cursor.execute('''
-    SELECT ***
-    ''')
-    results = cursor.fetchall()
-    return [row[0] for row in results]
+    ```bash
+    def get_function():
+        cursor.execute('''
+        SELECT ***
+        ''')
+        results = cursor.fetchall()
+        return [row[0] for row in results]
+    ```
 
 
-2. 保存查询结果到文件：
-def save_to_file(file_name, data):
-    with open(file_name, 'w', encoding='utf-8') as file:
-        for item in data:
-            file.write(f"{item}\n")
-    print(f"Saved data to {file_name}: {data}")
+
+3. 保存查询结果到文件：
+    ```bash
+    def save_to_file(file_name, data):
+        with open(file_name, 'w', encoding='utf-8') as file:
+            for item in data:
+                file.write(f"{item}\n")
+        print(f"Saved data to {file_name}: {data}")
+    ```
+
 
 
