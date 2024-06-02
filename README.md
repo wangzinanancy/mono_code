@@ -1,5 +1,5 @@
 # mono_code
-# Wedding Scheduler
+# Wedding inquiry
 
 ## 设置
 
@@ -15,7 +15,7 @@
     sqlite3_version: 3.40.1
     ```
 
-3. 将CSV数据加载到数据库：
+3. 将CSV数据添加到新建的数据库：
     ```bash
     python load_csv.py
     ```
@@ -24,4 +24,4 @@
 
 运行脚本生成婚礼列表：
 ```bash
-python wedding_scheduler.py
+
